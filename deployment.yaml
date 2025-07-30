@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-node
-          image: sromanno/hello-node:3
+          image: sromanno/hello-node:4
           ports:
             - containerPort: 3000
 ---
@@ -23,7 +23,8 @@ kind: Service
 metadata:
   name: hello-node-service
 spec:
-  type: ClusterIP
+  sessionAffinity: None
+  type: NodePort
   selector:
     app: hello-node
   ports:
