@@ -11,4 +11,4 @@ function onRequest(req, res){
 }
 
 //Listen for connections on the port provided to us by the host process
-var server = http.createServer(onRequest).listen(process.env.PORT);
+var server = http.createServer(onRequest).listen(3000);
