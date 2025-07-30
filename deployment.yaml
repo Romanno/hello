@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello-node
-          image: sromanno/hello-node:2
+          image: sromanno/hello-node:3
           ports:
             - containerPort: 3000
 ---
